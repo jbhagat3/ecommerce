@@ -1,0 +1,11 @@
+  <div *ngIf="item" class="card" style="width: 18rem;">
+      <img class="card-img-top"[src]="item.image" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title"><strong>Brand:</strong>{{item.brand}}</h5>
+        <p class="card-text"><strong>Category:</strong>{{item.category}}</p>
+        <p class="card-text"><strong>Price:</strong>${{item.price}}</p>
+        <a href="#" class="btn btn-primary">Back Button</a>  &nbsp;
+        <a href="#" class="btn btn-primary" (click)="backClicked()">Add To Cart</a>
+      </div>
+    </div>
+ 

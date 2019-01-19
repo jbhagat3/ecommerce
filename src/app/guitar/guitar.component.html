@@ -1,0 +1,18 @@
+<div class="row mx-auto">
+
+  <div class="col-3 p-4">
+  </div>
+  <div class="col-9">
+    <div class="card">
+      <div class="card-header bg-secondary">
+        Header
+      </div>
+      <div class="card-body">
+        <div class="row" *ngIf="guitaritems">
+<app-item  class="mx-auto my-1" *ngFor="let item of guitaritems" [item]="item" [routerLink]="['/details',item.id]"></app-item>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
